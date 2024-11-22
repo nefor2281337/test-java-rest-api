@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: demo
+  datasource:
+    password: ${DB_PASSWORD:radikylit972F}
+    #url: jdbc:postgresql://localhost:5432/exampleDb
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/postgres}
+    username: ${DB_USER:postgres}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
